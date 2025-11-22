@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Web App</title>
+
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated Cloud Background -->
+  <div class="clouds"></div>
+
+  <div class="app">
+
+    <!-- SEARCH BAR -->
+    <div class="search-box">
+      <input type="text" id="locationInput" placeholder="Search city..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- WEATHER CARD -->
+    <div id="weatherCard" class="weather-card hidden">
+
+      <!-- CITY NAME -->
+      <div class="location">
+        <i class="wi wi-direction-up"></i>
+        <span id="cityName"></span>
+      </div>
+
+      <!-- BIG TEMPERATURE -->
+      <div class="temperature">
+        <span id="temperature"></span>°
+      </div>
+
+      <!-- MAIN WEATHER CONDITION -->
+      <div class="condition-text" id="condition"></div>
+
+      <!-- TODAY'S WEATHER SUMMARY -->
+      <div id="todaySummary" class="today-summary"></div>
+
+      <!-- HUMAN FRIENDLY DESCRIPTION -->
+      <div id="descriptionBox" class="description-box"></div>
+
+      <!-- FEELS LIKE -->
+      <div class="feels-like">Feels like <span id="feelsLike"></span>°</div>
+
+      <!-- HOURLY FORECAST -->
+      <div class="hourly-section">
+        <h3>Hourly Forecast</h3>
+        <div id="hourlyContainer" class="hourly-scroll"></div>
+      </div>
+
+      <!-- DAILY FORECAST -->
+      <div class="daily-section">
+        <h3>7-Day Forecast</h3>
+        <div id="dailyContainer"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
